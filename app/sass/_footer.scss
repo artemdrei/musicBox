@@ -1,0 +1,19 @@
+.footer {
+  padding: 16px 16px 18px;
+  background: url('../img/textures/groovepaper.png');
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  background: $trolleyGray-1000;
+  color: #fff;
+  text-align: center;
+
+  .author {
+    font-family: "Amatic SC", cursive;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .copy {
+    font-size: 14px;
+  }
+}

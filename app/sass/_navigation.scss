@@ -1,0 +1,38 @@
+@import "./variables/_colors";
+
+.navigation_wrapper {
+  position: sticky;
+  top: 0px;
+  left: 0;
+  background-color: $trolleyGray-1000;
+  background-image: url("../img/textures/low-contrast-linen.png");
+  z-index: 3;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 16px;
+  list-style: none;
+}
+
+.nav__link {
+  margin: 0 20px;
+  font-family: 'Oswald', sans-serif;
+  transition: color 100ms;
+  color: #fff;
+  text-decoration-color: $trolleyGray-300;
+
+  &:hover {
+    color: $trolleyGray-100;
+  }
+
+  &:visited {
+    color: #fff;
+  }
+}
+
+.trackList {
+  display: none;
+}

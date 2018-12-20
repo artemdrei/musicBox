@@ -1,0 +1,123 @@
+@media only screen and (max-width: 768px) {
+
+  .header {
+    padding-top: 60px;
+  }
+
+  .mobile-header {
+    display: block;
+  }
+
+  // Navigation
+  .navigation_wrapper {
+    position: fixed;
+    top: 50px;
+    height: 100vh;
+    // display: none;
+    transform: translate(-100%);
+    transition: all 200ms;
+
+    &.isNavigationOpen {
+      transform: translate(0);
+      transition: all 200ms;
+    }
+  }
+
+  .nav__list {
+    display: block;
+    padding: 15px 0;
+  }
+
+  .nav__item {
+    width: 100%;
+  }
+
+  .nav__link {
+    display: block;
+    margin: 0;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+
+    &:active,
+    &:focus {
+      outline: 4px solid $mediumSeaGreen-700;
+    }
+  }
+  
+  .burger {
+    display: block;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+  }
+
+  // Section
+  .playing_track {
+    top: 10px;
+    width: 40%;
+  }
+
+  .category {
+    height: 50px;
+    top: 0;
+    padding: 5px 70px;
+    text-align: right;
+  }
+
+  .block_intro {
+    padding: 0;
+  }
+
+  
+
+  .intro {
+    padding: 50px 15px 50px;
+    background: transparent;
+
+    + .track {
+      padding-top: 0;
+    }
+  }
+
+  .track  {
+    padding: 40px 0;
+
+    .container {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  .video {
+    width: calc(100% - 6px);
+    margin: 20px auto;
+  }
+
+  .description {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .track_list__container {
+    display: block;
+  }
+
+  .track_list__spotify {
+    margin-left: 0;
+    margin-top: 20px;
+
+    iframe {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .playing_track,
+  .video,
+  .thumbnail {
+    max-height: 200px;
+  }
+}
