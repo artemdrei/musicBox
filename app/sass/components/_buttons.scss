@@ -13,14 +13,6 @@
   white-space: nowrap;
   border: none;
   outline-offset: 2px;
-
-  &:focus {
-    outline: 4px solid $mediumSeaGreen-700;
-  }
-
-  &:active {
-    outline: 4px solid $mediumSeaGreen-100;
-  }
 }
 
 .double_roll {

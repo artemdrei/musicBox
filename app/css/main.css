@@ -359,10 +359,6 @@ p {
   white-space: nowrap;
   border: none;
   outline-offset: 2px; }
-  .btn:focus {
-    outline: 4px solid #31925f; }
-  .btn:active {
-    outline: 4px solid #82cea5; }
 
 .double_roll {
   width: 200px;
