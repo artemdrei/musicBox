@@ -190,10 +190,10 @@
   const showTrackListButton = document.querySelector('.track_list__show_button');
   const trackListYoutube = document.querySelector('.track_list__youtube');
   const trackListSpotify = document.querySelector('.track_list__spotify');
-  const youTubeTrackList = `<iframe width="100%" height="500" src="https://www.youtube.com/embed/videoseries?list=PLx_GCmLuHXJnTWJtlmykgRhiFRoohq8dy" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-
-  const spotifyTrackList = `<iframe src="https://open.spotify.com/embed/user/artem_drei/playlist/1XsovXDTtikBn5NnjKG19s" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`
-
+  const youTubeTrackList = `
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/videoseries?list=PLx_GCmLuHXJnTWJtlmykgRhiFRoohq8dy" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+  const spotifyTrackList = `
+    <iframe src="https://open.spotify.com/embed/user/artem_drei/playlist/1XsovXDTtikBn5NnjKG19s" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`
 
   const togglePlayListComponents = () => {
     if (localStorage.getItem('isTrackListShown') === 'true') {
@@ -228,7 +228,6 @@
   }
 
   window.onkeyup = (e) => {
-    console.log(e.keyCode)
     if (e.keyCode === 27) {
       closeNavigationMenu();
     }

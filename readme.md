@@ -1,8 +1,3 @@
-### Start
-`npm i` - install all packages
-`gulp watch` - watching files changes
-`gulp build` - create build folder with all needed compressed files
+### Music Selection 2018 by Artem Drei
 
-### Structure
-`app` - a folder for development
-`dis` - the folder for production (there is no it before `gulp build`)
+[https://artemdrei.github.io/musicBox/dist/best2018.html](https://artemdrei.github.io/musicBox/dist/best2018.html)
