@@ -217,14 +217,14 @@ const data = [
     "className": "",
     "releases": [
       {
-        "cover": "./img/covers/Wilma Archer - Scarecrow.jpg",
-        "artist": "Wilma Archer",
-        "album": "Scarecrow",
-        "track": "Wilma Archer - Scarecrow",
+        "cover": "./img/covers/Yussef Dayes and Alfa Mist - Love is the message.jpg",
+        "artist": "Yussef Dayes & Alfa Mist",
+        "album": "Love Is The Message",
+        "track": "Yussef Dayes & Alfa Mist - Love Is The Message (ft.Mansur Brown & Rocco Palladino)",
         "date": "2018",
-        "instagram": "https://www.instagram.com/wilma.archer/",
-        "id": "cSwQUw8jQc0",
-        "description": `Особенность данного трека в том, что в «обычных» наушниках или на компьютерных колонках, скорее всего, не получится услышать всей глубины звучания. Зато при должной акустике, закрыв глаза, кажется, что контрабасист играет вживую прямо в паре метров от тебя. Еще хочется привести забавные цифры цифры: в instagram аж 320 подписчиков. Видимо мало котов, еды и что там модно нынче в кадре.`,
+        "instagram": "https://www.instagram.com/yussefdayes/",
+        "id": "NwVtIPeYIeQ",
+        "description": `«Love Is The Message» — музыкальная история, в которой без помощи слов сказано больше, чем во многих треках с вокалом. Данный релиз вышел на виниле не так давно, точнее 10/12/2018. По преордеру цена была £12.50. Все быстро раскупили и сейчас она стартует уже от €100.00 при том, что это сингл. Далеко не одну мне такая музыка по душе. А пластинку я так и не успел купить.`,
       },
       {
         "cover": "./img/covers/Gogo Penguin - Protest.jpg",
@@ -355,5 +355,4 @@ const data = [
     "anchor": "statistic",
     "className": "presentation"
   }
-]
-
+];
