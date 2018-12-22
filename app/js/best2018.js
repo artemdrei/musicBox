@@ -334,7 +334,7 @@ const data = [
     "title": "Statistics",
     "intro": `
     <div>Heмного статистики из Spotify:</div>
-    <div class="paragraph">79,127 минут. Это почти 55 дней неперервыного прослушивания.</div>
+    <div class="paragraph">79,127 минут за год. Это почти 55 дней неперервыного прослушивания.</div>
     <picture>
       <source srcset="./img/content/spotify_0.webp" type="image/webp">
       <img class="spotify_img" src="./img/content/spotify_0.jpg" alt="55 дней прослушивания">

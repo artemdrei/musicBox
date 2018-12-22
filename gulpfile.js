@@ -1,6 +1,6 @@
 let gulp = require('gulp'),
   plumber = require('gulp-plumber'),
-  sass = require('gulp-sass'),
+  scss = require('gulp-sass'),
   browserSync = require('browser-sync'),
   concat = require('gulp-concat'),
   babel = require('gulp-babel'),
@@ -11,10 +11,10 @@ let gulp = require('gulp'),
   autoprefixer = require('gulp-autoprefixer');
 
 //compile and sync scss files
-gulp.task('sass', () => {
-  return gulp.src('./app/sass/**/*.scss')
+gulp.task('scss', () => {
+  return gulp.src('./app/scss/**/*.scss')
     .pipe(plumber())
-    .pipe(sass())
+    .pipe(scss())
     .pipe(autoprefixer(['last 2 versions', '>1%'], { cascade: false }))
     .pipe(gulp.dest("./app/css"))
     .pipe(browserSync.reload({
@@ -35,9 +35,9 @@ gulp.task('clean', function () {
   return del.sync('dist')
 });
 
-//watch changes in sass folder
+//watch changes in scss folder
 gulp.task('watch', ['browserSync'], () => {
-  gulp.watch('./app/sass/**/*.scss', ['sass']);
+  gulp.watch('./app/scss/**/*.scss', ['scss']);
   gulp.watch('./app/*.html', browserSync.reload); //watch HTML
   gulp.watch('./app/js/*.js', browserSync.reload); //watch JS
 });
@@ -48,7 +48,7 @@ gulp.task('html', function () {
 });
 
 // build for production
-gulp.task('build', ['clean', 'sass', 'html'], () => {
+gulp.task('build', ['clean', 'scss', 'html'], () => {
   gulp.src('./app/css/main.css')
     .pipe(cssnano())
     .pipe(gulp.dest('./dist/css'));
