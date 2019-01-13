@@ -1,3 +1,5 @@
+@import "./variables/_colors";
+
 @media only screen and (max-width: 768px) {
 
   .header {
@@ -15,6 +17,7 @@
     height: 100vh;
     transform: translate(-100%);
     transition: all 200ms;
+    background: #171717de;
 
     &.isNavigationOpen {
       transform: translate(0);
@@ -37,6 +40,12 @@
     padding: 10px 15px;
     color: #fff;
     text-decoration: none;
+
+    &:focus {
+      box-shadow: none;
+      outline: 3px solid $mediumSeaGreen-600;
+      outline-offset: -6px;
+    }
   }
   
   .burger {

@@ -41,9 +41,9 @@
       content +=
         `<div class="track">
         <div class="container">
-          <div class="youtube video" data-embed="${release.id}">
+          <button class="youtube video" data-embed="${release.id}">
             <div class="play-button"></div>
-          </div>
+          </button>
           <div class="description">
             <div class="info">
               <div>
@@ -53,8 +53,9 @@
                 ${release.instagram && `<span>Instagram: </span><a class="link" href="${release.instagram}" target="_blank">Link</a>`}
               </div>
               <img
-                src="${release.cover}"
                 class="cover"
+                src="${release.cover}"
+                alt="${release.coverAlt}"
               />
             </div>
 
@@ -227,7 +228,7 @@
     navigationWrapper.classList.remove('isNavigationOpen')
   }
 
-  window.onkeyup = (e) => {
+  window.onkeydown = (e) => {
     if (e.keyCode === 27) {
       closeNavigationMenu();
     }
